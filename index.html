@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container-fluid d-flex">
+			<div class="row">
+				<div class="col-3 bg-dark">
+					<div class="row h-100 flex-column">
+						<div class="col-6 mw-100 p-4">
+							<form id="form">
+								<div class="form-group">
+									<label for="exampleFormControlSelect1">choose a geometry</label>
+									<select class="form-control" id="geometryType">
+									  <option value="cube">cube</option>
+									  <option value="sphere">sphere</option>
+									  <option value="cilynder">cilynder</option>
+									  <option value="torus">torus</option>
+									</select>
+								</div>
+								<div class="form-group mt-4">
+									<label for="exampleFormControlSelect1">choose a material</label>
+									<select class="form-control" id="textureType">
+									  <option>basic</option>
+									  <option>normal</option>
+									  <option>lambert</option>
+									  <option>standard</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-primary mt-3">Submit</button>
+							  </form>
+						</div>
+						<div class="col-6 mw-100">
+							<form id="form_models">
+								<div class="form-group">
+									<label for="exampleFormControlSelect1">choose a model</label>
+									<select class="form-control" id="model">
+									  <option value="bonnie">bonnie</option>
+									  <option value="foxy">foxy</option>
+									  <option value="freddy">freddy</option>
+									  <option value="chica">chica</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-primary mt-3">Submit</button>
+							  </form>
+						</div>
+					</div>
+				</div>
+				<canvas id="canvas" class="col-9"></canvas>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+		<script type="module" src="/js/index.js"></script>
+	</body>
+</html>
